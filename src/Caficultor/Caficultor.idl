@@ -1,0 +1,8 @@
+module CaficultorApp{
+interface Caficultor{
+boolean insertarPersona( in long identificacion, in char tipo_identificacion, in wstring nombres, in wstring apellidos, in long telefono, in wstring direccion, in long ubicacion, in char sexo, in char estado);
+boolean actualizarPersona(in long identificacion, in char tipo_identificacion, in wstring nombres, in wstring apellidos, in long telefono, in wstring direccion, in long ubicacion, in char sexo, in char estado);
+boolean eliminarPersona(in long identificacion);
+oneway void shutdown();
+};
+};
