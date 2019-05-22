@@ -80,6 +80,7 @@ public class CaficultorFRM extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jtbCaficultor = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
+        btnModificar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -166,6 +167,10 @@ public class CaficultorFRM extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Caficultores");
 
+        btnModificar.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnModificar.setForeground(new java.awt.Color(0, 97, 47));
+        btnModificar.setText("Modificar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -187,20 +192,25 @@ public class CaficultorFRM extends javax.swing.JFrame {
                                 .addComponent(lblCaf_sexo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(lblCaf_estado, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(btnGuardar))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnEliminar)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtCaf_identificacion)
-                                .addComponent(txtCaf_tipo_identificacion)
-                                .addComponent(txtCaf_nombres)
-                                .addComponent(txtCaf_apellidos)
-                                .addComponent(txtCaf_telefono)
-                                .addComponent(txtCaf_direccion)
-                                .addComponent(txtCaf_ubicacion)
-                                .addComponent(txtCaf_sexo)
-                                .addComponent(txtCaf_estado)
-                                .addComponent(txtCaf_email, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(41, 41, 41)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtCaf_identificacion)
+                                    .addComponent(txtCaf_tipo_identificacion)
+                                    .addComponent(txtCaf_nombres)
+                                    .addComponent(txtCaf_apellidos)
+                                    .addComponent(txtCaf_telefono)
+                                    .addComponent(txtCaf_direccion)
+                                    .addComponent(txtCaf_ubicacion)
+                                    .addComponent(txtCaf_sexo)
+                                    .addComponent(txtCaf_estado)
+                                    .addComponent(txtCaf_email, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnModificar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                                .addComponent(btnEliminar)))
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 965, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
@@ -257,9 +267,11 @@ public class CaficultorFRM extends javax.swing.JFrame {
                             .addComponent(lblCaf_estado)
                             .addComponent(txtCaf_estado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnGuardar)
-                            .addComponent(btnEliminar))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(btnGuardar)
+                                .addComponent(btnEliminar))
+                            .addComponent(btnModificar))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -341,6 +353,7 @@ public class CaficultorFRM extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnModificar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jtbCaficultor;

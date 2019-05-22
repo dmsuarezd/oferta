@@ -42,20 +42,27 @@
                           </Group>
                           <Component id="btnGuardar" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnEliminar" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtCaf_identificacion" max="32767" attributes="0"/>
-                              <Component id="txtCaf_tipo_identificacion" max="32767" attributes="0"/>
-                              <Component id="txtCaf_nombres" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtCaf_apellidos" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtCaf_telefono" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtCaf_direccion" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtCaf_ubicacion" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtCaf_sexo" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtCaf_estado" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtCaf_email" alignment="0" pref="158" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="txtCaf_identificacion" max="32767" attributes="0"/>
+                                  <Component id="txtCaf_tipo_identificacion" max="32767" attributes="0"/>
+                                  <Component id="txtCaf_nombres" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCaf_apellidos" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCaf_telefono" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCaf_direccion" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCaf_ubicacion" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCaf_sexo" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCaf_estado" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCaf_email" alignment="0" pref="158" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnModificar" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="31" max="32767" attributes="0"/>
+                              <Component id="btnEliminar" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -129,9 +136,12 @@
                           <Component id="txtCaf_estado" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btnGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnEliminar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnEliminar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="btnModificar" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -378,6 +388,17 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Caficultores"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnModificar">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="2f" green="61" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Modificar"/>
       </Properties>
     </Component>
   </SubComponents>
