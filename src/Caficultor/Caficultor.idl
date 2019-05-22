@@ -1,8 +1,8 @@
 module CaficultorApp{
 interface Caficultor{
-boolean insertarPersona( in long identificacion, in char tipo_identificacion, in wstring nombres, in wstring apellidos, in long telefono, in wstring direccion, in long ubicacion, in char sexo, in char estado);
-boolean actualizarPersona(in long identificacion, in char tipo_identificacion, in wstring nombres, in wstring apellidos, in long telefono, in wstring direccion, in long ubicacion, in char sexo, in char estado);
-boolean eliminarPersona(in long identificacion);
+boolean insertarCaficultor( in long caf_identificacion, in wstring caf_tipo_identificacion, in wstring caf_nombres, in wstring caf_apellidos, in long caf_telefono, in wstring caf_direccion, in wstring caf_email, in long caf_id_ubicacion, in wstring caf_sexo, in wstring caf_estado);
+boolean actualizarCaficultor(in long caf_identificacion, in wstring caf_tipo_identificacion, in wstring caf_nombres, in wstring caf_apellidos, in long caf_telefono, in wstring caf_direccion, in long caf_id_ubicacion, in wstring caf_email, in wstring caf_sexo, in wstring caf_estado);
+boolean eliminarCaficultor(in long caf_identificacion);
 oneway void shutdown();
 };
 };
