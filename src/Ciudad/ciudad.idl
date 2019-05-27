@@ -1,0 +1,8 @@
+module CiudadApp{
+interface Ciudad{
+boolean insertarCiudad(in long ubi_id_ubicacion, in wstring ubi_nombre, in wstring ubi_estado);
+boolean actualizarCiudad(in long ubi_id_ubicacion, in wstring ubi_nombre, in wstring ubi_estado);
+boolean eliminarCiudad(in long ubi_id_ubicacion);
+oneway void shutdown();
+};
+};

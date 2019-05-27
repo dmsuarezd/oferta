@@ -112,14 +112,66 @@ conexion conectar = new conexion();
             JOptionPane.showMessageDialog(null, "Ocurrio un error: "+e.getMessage());
         }
         return resultado;
+        
     }
     
-
+    //Carga y SQL de Ciudad (Ubicacion)
+    public ResultSet cargarComboCiudad() {
+        ResultSet resultado = null;
+        try {
+            String query = "Select ubi_id_ubicacion, ubi_nombre, ubi_estado from ubicacion where ubi_estado ='A'";
+            conectar.conectar();
+            Statement st = conectar.conex.createStatement();
+            resultado = st.executeQuery(query);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Ocurrio un error al cargar los datos del combobox Ubicacioó: "+e.getMessage());
+        }
+        return resultado;
+    }
     
+    //Carga y SQL de Sexo
+    public ResultSet cargarComboSexo() {
+        ResultSet resultado = null;
+        try {
+            String query = "Select car_nombre, car_codigo from caracteristica where car_caracteristica='sexo' and car_estado = 'A'";
+            conectar.conectar();
+            Statement st = conectar.conex.createStatement();
+            resultado = st.executeQuery(query);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Ocurrio un error cargar los datos del combobox Sexo "+e.getMessage());
+        }
+        return resultado;
+    }
     
-
+    //Carga y SQL de Tipo de Idntificación
     
-
+    public ResultSet cargarComboTipoIdentificacion() {
+        ResultSet resultado = null;
+        try {
+            String query = "Select car_nombre, car_codigo from caracteristica where car_caracteristica='identificacion' and car_estado = 'A'";
+            conectar.conectar();
+            Statement st = conectar.conex.createStatement();
+            resultado = st.executeQuery(query);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Ocurrio un error cargar los datos del combobox Sexo "+e.getMessage());
+        }
+        return resultado;
+    }
+    
+    //Carga y SQL de Estado de Caficultor
+    
+    public ResultSet cargarComboEstado() {
+        ResultSet resultado = null;
+        try {
+            String query = "select car_codigo, car_nombre from caracteristica where car_caracteristica = 'estado' and car_estado = 'A'";
+            conectar.conectar();
+            Statement st = conectar.conex.createStatement();
+            resultado = st.executeQuery(query);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Ocurrio un error cargar los datos del combobox Sexo "+e.getMessage());
+        }
+        return resultado;
+    }
     
 
 
