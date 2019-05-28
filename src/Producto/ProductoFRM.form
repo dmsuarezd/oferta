@@ -39,15 +39,15 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="lblUbi_id_ubicacion" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="lblUbi_nombre" alignment="1" pref="123" max="32767" attributes="0"/>
-                                      <Component id="lblUbi_estado" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="lblPro_id_Producto" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="lblPro_nombre" alignment="1" pref="123" max="32767" attributes="0"/>
+                                      <Component id="lblPro_estado" alignment="1" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="cmbUbi_estado" alignment="0" pref="164" max="32767" attributes="0"/>
-                                      <Component id="txtUbi_id_ubicacion" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtUbi_nombre" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="cmbPro_estado" alignment="0" pref="164" max="32767" attributes="0"/>
+                                      <Component id="txtPro_id_Producto" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtPro_nombre" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -84,18 +84,18 @@
               </Group>
               <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblUbi_id_ubicacion" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtUbi_id_ubicacion" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPro_id_Producto" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPro_id_Producto" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblUbi_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtUbi_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPro_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPro_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblUbi_estado" min="-2" max="-2" attributes="0"/>
-                  <Component id="cmbUbi_estado" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPro_estado" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmbPro_estado" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -117,23 +117,23 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="lblUbi_id_ubicacion">
+    <Component class="javax.swing.JLabel" name="lblPro_id_Producto">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="12" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="C&#xf3;digo Ciudad"/>
+        <Property name="text" type="java.lang.String" value="C&#xf3;digo Producto"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblUbi_nombre">
+    <Component class="javax.swing.JLabel" name="lblPro_nombre">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="12" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Nombre Ciudad:"/>
+        <Property name="text" type="java.lang.String" value="Nombre Producto:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblUbi_estado">
+    <Component class="javax.swing.JLabel" name="lblPro_estado">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="12" style="1"/>
@@ -141,7 +141,7 @@
         <Property name="text" type="java.lang.String" value="Estado:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtUbi_id_ubicacion">
+    <Component class="javax.swing.JTextField" name="txtPro_id_Producto">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="12" style="0"/>
@@ -151,10 +151,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtUbi_id_ubicacionKeyTyped"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPro_id_ProductoKeyTyped"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtUbi_nombre">
+    <Component class="javax.swing.JTextField" name="txtPro_nombre">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="12" style="0"/>
@@ -164,7 +164,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtUbi_nombreKeyTyped"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPro_nombreKeyTyped"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnGuardar">
@@ -202,7 +202,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="jtbCaficultor">
+        <Component class="javax.swing.JTable" name="jtbProducto">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="11" style="0"/>
@@ -211,7 +211,7 @@
               <Color blue="66" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="modeloTablaCiudad" type="code"/>
+              <Connection code="modeloTablaProducto" type="code"/>
             </Property>
           </Properties>
         </Component>
@@ -227,9 +227,9 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagenes/ubicacion.png"/>
+          <Image iconType="3" name="/imagenes/pepa_cafe.jpg"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Ciudades"/>
+        <Property name="text" type="java.lang.String" value="Productos"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnModificar">
@@ -243,7 +243,7 @@
         <Property name="text" type="java.lang.String" value="Modificar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="cmbUbi_estado">
+    <Component class="javax.swing.JComboBox" name="cmbPro_estado">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="12" style="0"/>

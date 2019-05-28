@@ -6,7 +6,8 @@
 package Inicio;
 
 import Caficultor.CaficultorFRM;
-import Ciudad.ProductoFRM;
+import Ciudad.CiudadFRM;
+import Producto.ProductoFRM;
 
 /**
  *
@@ -59,6 +60,11 @@ public class Inicio extends javax.swing.JFrame {
         cmbProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/pepa_cafe.jpg"))); // NOI18N
         cmbProductos.setText(" Productos");
         cmbProductos.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, java.awt.Color.orange, java.awt.Color.orange, java.awt.Color.orange, java.awt.Color.orange));
+        cmbProductos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbProductosActionPerformed(evt);
+            }
+        });
 
         cmbUbicacion.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         cmbUbicacion.setForeground(new java.awt.Color(102, 0, 0));
@@ -147,12 +153,20 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbSalirActionPerformed
 
     private void cmbUbicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbUbicacionActionPerformed
-        Ciudad.ProductoFRM verformulario2 =new ProductoFRM(); 
+        Ciudad.CiudadFRM verformulario2 =new CiudadFRM(); 
  
          //línea 2-hacemos visible el formulario que queremos llamar 
          verformulario2.setVisible(true); 
          setVisible(false);
     }//GEN-LAST:event_cmbUbicacionActionPerformed
+
+    private void cmbProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbProductosActionPerformed
+       Producto.ProductoFRM verformulario2 =new ProductoFRM(); 
+ 
+         //línea 2-hacemos visible el formulario que queremos llamar 
+         verformulario2.setVisible(true); 
+         setVisible(false);
+    }//GEN-LAST:event_cmbProductosActionPerformed
 
     /**
      * @param args the command line arguments
